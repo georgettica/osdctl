@@ -1,0 +1,18 @@
+name: Push To ocm-container
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout ocm-container project
+      uses: actions/checkout@v2.3.4
+      with:
+        repository: openshift/ocm-container
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3.8.2
+      with:
+        commit-message: "chore(osdctl): bump version to"
