@@ -14,11 +14,11 @@ jobs:
         repository: openshift/ocm-container
 #https://github.com/marketplace/actions/get-latest-release
     - name: Find and Replace
-        uses: jacobtomlinson/gha-find-replace@master
-        with:
-          find: "hello"
-          replace: "world"
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3.8.2
-        with:
-          commit-message: "chore(osdctl): bump version to"
+      uses: jacobtomlinson/gha-find-replace@master
+      with:
+        find: "hello"
+        replace: "world"
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3.8.2
+      with:
+        commit-message: "chore(osdctl): bump version to"
