@@ -18,7 +18,7 @@ jobs:
         with:
           find: "hello"
           replace: "world"
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v3.8.2
-      with:
-        commit-message: "chore(osdctl): bump version to"
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3.8.2
+        with:
+          commit-message: "chore(osdctl): bump version to"
