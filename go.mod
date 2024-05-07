@@ -30,7 +30,7 @@ require (
 	gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c // indirect
 	gopkg.in/yaml.v2 v2.4.0
 	k8s.io/api v0.18.5
-	k8s.io/apimachinery v0.18.5
+	k8s.io/apimachinery v0.18.8
 	k8s.io/cli-runtime v0.18.3
 	k8s.io/client-go v12.0.0+incompatible
 	k8s.io/klog/v2 v2.9.0
